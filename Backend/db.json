@@ -1,0 +1,65 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "Nike Air Max",
+            "image": "/images/product19-removebg-preview.png",
+            "price": 120,
+            "category": "Footwear"
+        },
+        {
+            "id": 2,
+            "name": "Adidas Ultraboost",
+            "image": "/images/product2-removebg-preview.png",
+            "price": 180,
+            "category": "Footwear"
+        },
+        {
+            "id": 3,
+            "name": "Puma Running Shoes",
+            "image": "/images/product15-removebg-preview.png",
+            "price": 100,
+            "category": "Footwear"
+        },
+        {
+            "id": 4,
+            "name": "Reebok Classics",
+            "image": "/images/product21-removebg-preview.png",
+            "price": 90,
+            "category": "Footwear"
+        }
+        
+        
+    ],
+    "bestproduct":[
+        {
+            "id": 1,
+            "name": "New Balance 574",
+            "image": "/images/product11-removebg-preview.png",
+            "price": 110,
+            "category": "Footwear"
+        },
+        {
+            "id": 2,
+            "name": "ASICS Gel-Kayano",
+            "image": "/images/product17-removebg-preview.png",
+            "price": 160,
+            "category": "Footwear"
+        },
+        {
+            "id": 3,
+            "name": "Converse Chuck Taylor",
+            "image": "/images/product12-removebg-preview.png",
+            "price": 70,
+            "category": "Footwear"
+        },
+        {
+            "id": 4,
+            "name": "Vans Old Skool",
+            "image": "/images/product10-removebg-preview.png",
+            "price": 65,
+            "category": "Footwear"
+        }
+    ]
+    
+}

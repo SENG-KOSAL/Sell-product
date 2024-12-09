@@ -1,0 +1,202 @@
+:root {
+  --primary-bg-dark: #3e5773;
+  --primary-bg-light: #e0f7fa; /* Light background color */
+  --primary-text-light: #003300; /* Light text color */
+  --transition-speed: 0.3s; /* Duration of the transition */
+
+
+  --bg-light: #ffffff; /* Light mode background */
+  --bg-dark: #1b263b; /* Dark mode background */
+
+  --card-bg-light: #f0f4f8; /* Light mode card background */
+  --card-bg-dark: #2e3a4d; /* Dark mode card background */
+
+  --text-light: #000000; /* Light mode text color */
+  --text-dark: #ffffff; /* Dark mode text color */
+
+  --icon-light: #00a676; /* Light mode icon color */
+  --icon-dark: #00e676; /* Dark mode icon color */
+
+  --shadow-light: rgba(0, 0, 0, 0.2); /* Light mode shadow */
+  --shadow-dark: rgba(255, 255, 255, 0.2); /* Dark mode shadow */
+
+  --transition-speed: 0.3s; /* Smooth transition */
+
+
+
+
+
+
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-bg-light);
+  color: var(--primary-text-light);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.organic-section {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #e0f7fa;
+    color: #003300;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .badge {
+    color: #008000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .shop-btn {
+    background-color: #36ac67;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-btn:hover {
+    background-color: #007e33;
+  }
+  
+  .images {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .product-img {
+    max-width: 100px;
+    border-radius: 10px;
+  }
+/* Features Section Styling */
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures the cards wrap to a new row on smaller screens */
+  padding: 2rem;
+  background-color: var(--bg-light); /* Uses light/dark mode background */
+  color: var(--text-light); /* Uses light/dark mode text color */
+  gap: 1rem; /* Adds spacing between cards */
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+body.dark-mode .features-section {
+  background-color: var(--bg-dark); /* Dark mode background for section */
+  color: var(--text-dark); /* Dark mode text color for section */
+}
+
+.feature-card {
+  background-color: var(--card-bg-light); /* Card background for light mode */
+  color: var(--text-light); /* Card text color */
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px var(--shadow-light); /* Light mode shadow */
+  width: 22%; /* Default width for desktop */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color var(--transition-speed);
+}
+
+body.dark-mode .feature-card {
+  background-color: var(--card-bg-dark); /* Card background for dark mode */
+  box-shadow: 0 4px 6px var(--shadow-dark); /* Dark mode shadow */
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Lifts the card on hover */
+  box-shadow: 0 6px 12px var(--shadow-light); /* Light mode hover shadow */
+}
+
+body.dark-mode .feature-card:hover {
+  box-shadow: 0 6px 12px var(--shadow-dark); /* Dark mode hover shadow */
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--icon-light); /* Light mode icon color */
+}
+
+body.dark-mode .feature-card .icon {
+  color: var(--icon-dark); /* Dark mode icon color */
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-light); /* Adjust based on light/dark mode */
+}
+
+/* Responsive Styling */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .features-section {
+    flex-wrap: wrap; /* Cards wrap to the next row */
+    justify-content: center; /* Center align cards */
+    gap: 1.5rem; /* Add spacing between rows */
+  }
+
+  .feature-card {
+    width: 45%; /* Each card takes about half the width on tablets */
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem; /* Slightly smaller title font */
+  }
+
+  .feature-card p {
+    font-size: 0.85rem; /* Slightly smaller description font */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .features-section {
+    padding: 1rem; /* Reduce padding for small screens */
+  }
+
+  .feature-card {
+    width: 90%; /* Each card takes full width */
+  }
+
+  .feature-card h3 {
+    font-size: 1rem; /* Further reduce title font size */
+  }
+
+  .feature-card p {
+    font-size: 0.8rem; /* Further reduce description font size */
+  }
+}

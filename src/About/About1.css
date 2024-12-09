@@ -1,0 +1,96 @@
+.organic-products-container {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    background-color: #eaf7fd; /* Light blue background */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .organic-left {
+    background-color: #fde5e5; /* Light red background */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-description p {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  
+  .ratings {
+    font-size: 20px;
+    color: #f4c542;
+    margin: 10px 0;
+  }
+  
+  .review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+  }
+  
+  .organic-right {
+    text-align: left;
+    max-width: 400px;
+  }
+  
+  .certified-products h3,
+  .organic-products-list h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .certified-products p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .organic-products-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .organic-products-list li {
+    margin: 5px 0;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .organic-products-list li:before {
+    content: "🍃"; /* Green leaf emoji */
+    position: absolute;
+    left: 0;
+  }
+  
+  .shop-now-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-button:hover {
+    background-color: #218838;
+  }
+  

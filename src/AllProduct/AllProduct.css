@@ -1,0 +1,192 @@
+/* Container for the entire product grid */
+.product-list-container {
+  padding: 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Product Grid - horizontal layout */
+.product-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.product-grid.dragging {
+  cursor: grabbing;
+}
+
+/* Hide scrollbar */
+.product-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px; /* Default card size */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image and content */
+.product-info img {
+  width: 80%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-category {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Sizes for the product */
+.product-sizes span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-sizes span:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Cart button style */
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  .product-card {
+    width: 200px; /* Smaller cards for mobile */
+  }
+
+  .product-grid {
+    gap: 10px; /* Reduced gap between cards */
+  }
+
+  .product-name {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .product-price {
+    font-size: 1.1rem; /* Adjust font size for mobile */
+  }
+
+  .scroll-btn {
+    padding: 8px 16px; /* Smaller scroll buttons */
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .product-card {
+    width: 220px; /* Slightly larger cards for tablets */
+  }
+
+  .product-grid {
+    gap: 15px; /* Medium gap between cards */
+  }
+
+  .product-name {
+    font-size: 1.3rem; /* Adjust font size for tablets */
+  }
+
+  .product-price {
+    font-size: 1.2rem; /* Adjust font size for tablets */
+  }
+
+  .scroll-btn {
+    padding: 10px 18px; /* Medium-sized scroll buttons */
+    font-size: 1.4rem;
+  }
+}
+
+/* Larger Screens (Desktop) */
+@media screen and (min-width: 769px) {
+  .product-card {
+    width: 250px; /* Default size for desktop */
+  }
+
+  .product-grid {
+    gap: 20px; /* Default gap between cards */
+  }
+
+  .product-name {
+    font-size: 1.4rem; /* Default font size for desktop */
+  }
+
+  .product-price {
+    font-size: 1.25rem; /* Default font size for desktop */
+  }
+
+  .scroll-btn {
+    padding: 10px 20px; /* Standard scroll button size */
+    font-size: 1.5rem;
+  }
+}
+
+/* Very Large Screens (Larger Desktops / TVs) */
+@media screen and (min-width: 1200px) {
+  .product-card {
+    width: 280px; /* Larger cards for very large screens */
+  }
+
+  .product-grid {
+    gap: 25px; /* Larger gap between cards */
+  }
+
+  .product-name {
+    font-size: 1.5rem; /* Larger font size for very large screens */
+  }
+
+  .product-price {
+    font-size: 1.3rem; /* Larger font size for very large screens */
+  }
+}

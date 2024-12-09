@@ -1,0 +1,95 @@
+/* General Container */
+.contact-faq-container {
+    font-family: Arial, sans-serif;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333;
+  }
+  
+  /* Get In Touch Section */
+  .get-in-touch {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .get-in-touch h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-card {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-icon {
+    font-size: 40px;
+    color: #28a745; /* Green color for icons */
+    margin-bottom: 10px;
+  }
+  
+  .contact-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    text-align: center;
+  }
+  
+  .faq h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .faq-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .faq-item p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .arrow-icon {
+    font-size: 16px;
+    color: #555;
+  }
+  
